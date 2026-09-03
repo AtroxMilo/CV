@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #0a0a0b;
+  --color-bg-2: #111114;
+  --color-border: #1f1f23;
+  --color-fg: #ededee;
+  --color-muted: #8a8a92;
+  --color-accent: #5eead4;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-2);
+    border-radius: 10px;
+    padding: 0.7rem 1.1rem;
+    font-weight: 500;
+    transition:
+      transform 0.12s,
+      border-color 0.12s,
+      background 0.12s;
+  }
+
+  .btn:hover {
+    transform: translateY(-1px);
+    border-color: color-mix(in oklab, var(--color-accent) 60%, var(--color-border));
+  }
+
+  .btn-primary {
+    background: color-mix(in oklab, var(--color-accent) 18%, var(--color-bg-2));
+    border-color: color-mix(in oklab, var(--color-accent) 50%, var(--color-border));
+    color: var(--color-fg);
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-2);
+    border-radius: 999px;
+    padding: 0.2rem 0.65rem;
+    font-size: 0.75rem;
+    font-family: var(--font-mono, ui-monospace);
+    color: var(--color-muted);
+  }
+}
