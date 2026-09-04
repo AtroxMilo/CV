@@ -27,7 +27,7 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.15}>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link href="/contact" className="btn btn-primary">
               Get in touch
             </Link>
