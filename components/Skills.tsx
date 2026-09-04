@@ -22,10 +22,7 @@ function SkillGroup({ title, items }: { title: string; items: string[] }) {
 
 export function Skills() {
   return (
-    <section
-      id="skills"
-      className="relative mx-auto max-w-6xl scroll-mt-20 px-5 py-24 md:py-32"
-    >
+    <section className="relative mx-auto max-w-6xl px-5 py-24 md:py-32">
       <Reveal>
         <SectionHeading number="04" label="Skills" heading={skills.heading} />
       </Reveal>

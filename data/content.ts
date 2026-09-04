@@ -3,6 +3,7 @@
 
 export const profile = {
   name: "Ismail Mazhar",
+  photo: "/images/profile-photo.jpg",
   title: "Business & Technology Student — Marketing & Entrepreneurship", // TODO: confirm/rewrite
   location: "Barcelona, Spain",
   citizenship: "French & Egyptian",
@@ -144,6 +145,7 @@ export const education = {
   items: [
     {
       school: "La Salle – Universitat Ramon Llull",
+      logo: "/images/logo-la-salle.jpg",
       location: "Barcelona, Spain",
       degree: "Management in Business and Technology (minor in Marketing)",
       dates: "TODO – TODO (expected)", // currently 2nd year
@@ -151,6 +153,7 @@ export const education = {
     },
     {
       school: "ESLSCA Business School",
+      logo: "/images/logo-eslsca.jpg",
       location: "Egypt",
       degree: "Entrepreneurship & Innovation Program",
       dates: "TODO",
@@ -158,6 +161,7 @@ export const education = {
     },
     {
       school: "SABIS International School of Choueifat",
+      logo: "/images/logo-sabis.png",
       location: "6th of October City, Egypt",
       degree: "High School Diploma",
       dates: "TODO",

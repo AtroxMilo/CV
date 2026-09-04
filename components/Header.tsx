@@ -1,44 +1,51 @@
-import { profile } from "@/data/content";
+"use client";
 
-const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#skills", label: "Skills" },
-  { href: "#education", label: "Education" },
-  { href: "#looking-for", label: "Looking for" },
-  { href: "#contact", label: "Contact" },
-];
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { profile } from "@/data/content";
+import { pages } from "@/lib/nav";
 
 export function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-4">
-        <a href="#top" className="font-semibold tracking-tight">
-          {profile.name.split(" ")[0]}
-        </a>
-        <nav className="hidden items-center gap-6 text-sm text-muted md:flex">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="transition-colors hover:text-fg"
-            >
-              {link.label}
-            </a>
-          ))}
+        <Link href="/" className="font-semibold tracking-tight">
+          {profile.name}
+        </Link>
+        <nav className="hidden items-center gap-6 text-sm md:flex">
+          {pages.map((page) => {
+            const isActive = pathname === page.href;
+            return (
+              <Link
+                key={page.href}
+                href={page.href}
+                className={
+                  isActive
+                    ? "text-fg"
+                    : "text-muted transition-colors hover:text-fg"
+                }
+              >
+                {page.label}
+              </Link>
+            );
+          })}
           {profile.links.cvPdf ? (
             <a
               href={profile.links.cvPdf}
-              className="transition-colors hover:text-fg"
+              className="text-muted transition-colors hover:text-fg"
             >
               CV
             </a>
           ) : null}
         </nav>
-        <a href="#contact" className="btn btn-primary hidden text-sm sm:inline-flex">
+        <Link
+          href="/contact"
+          className="btn btn-primary hidden text-sm sm:inline-flex"
+        >
           Get in touch
-        </a>
+        </Link>
       </div>
     </header>
   );

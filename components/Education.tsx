@@ -4,10 +4,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function Education() {
   return (
-    <section
-      id="education"
-      className="relative mx-auto max-w-6xl scroll-mt-20 px-5 py-24 md:py-32"
-    >
+    <section className="relative mx-auto max-w-6xl px-5 py-24 md:py-32">
       <Reveal>
         <SectionHeading
           number="05"

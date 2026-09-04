@@ -4,10 +4,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function About() {
   return (
-    <section
-      id="about"
-      className="relative mx-auto max-w-6xl scroll-mt-20 px-5 py-24 md:py-32"
-    >
+    <section className="relative mx-auto max-w-6xl px-5 py-24 md:py-32">
       <Reveal>
         <SectionHeading number="01" label="About" heading={about.heading} />
       </Reveal>
