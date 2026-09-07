@@ -137,7 +137,11 @@ export const skills = {
     "Miniconda / Anaconda",
     "Claude (AI-assisted development)",
   ],
-  certifications: [], // CONFIRM: you said "expand" here — unclear if that means you have specific certifications to list, or want this section broadened some other way. Left empty for now.
+  certifications: [
+    "ESLSCA Entrepreneurship & Innovation Certificate",
+    "Hamleys Internship Certificate",
+    "Online Course — Igor Rupeita (Skool)", // CONFIRM: what was this course actually about/called? A real title (e.g. "Sales Mastery" or whatever it was) will read much better than "Online Course"
+  ],
 };
 
 export const education = {
