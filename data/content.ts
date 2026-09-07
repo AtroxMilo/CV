@@ -49,6 +49,27 @@ export const experience = {
   heading: "What I've been doing.",
   roles: [
     {
+      title: "Marketing & Sales Support",
+      company: "Canela Cai",
+      dates: "2026",
+      type: "Freelance / informal",
+      bullets: [
+        "Supported social media marketing for the business.",
+        "Worked on the ground as a promoter and salesperson at a large beach event, engaging attendees and driving trials and sales.",
+      ],
+    },
+    {
+      title: "Team Lead, Entrepreneurship Program",
+      company: "ESLSCA Business School (Egypt)",
+      dates: "December 2025", // one-week program
+      type: "Program",
+      bullets: [
+        "Led a team building a court-finder app concept from scratch — business model canvas, demo site, and mock marketing flyers.",
+        "Planned a go-to-market and social media ad strategy for the concept.",
+        "Delivered the final pitch to a panel of investors.",
+      ],
+    },
+    {
       title: "Founder & Creator",
       company: "Self-Improvement YouTube Channel & Community",
       dates: "2023 – 2024",
@@ -68,27 +89,6 @@ export const experience = {
       bullets: [
         "Assisted customers on the shop floor and gave product recommendations.",
         "Retrieved stock and supported day-to-day shop operations.",
-      ],
-    },
-    {
-      title: "Marketing & Sales Support",
-      company: "Canela", // CONFIRM: read as "Canela" from "Canela cai 2026" — double check spelling/name
-      dates: "2026", // CONFIRM: this places it as the most recent role — check it shouldn't be reordered to the top
-      type: "Freelance / informal",
-      bullets: [
-        "Supported social media marketing for the business.",
-        "Worked on the ground as a promoter and salesperson at a large beach event, engaging attendees and driving trials and sales.",
-      ],
-    },
-    {
-      title: "Team Lead, Entrepreneurship Program",
-      company: "ESLSCA Business School (Egypt)",
-      dates: "December 2025", // one-week program
-      type: "Program",
-      bullets: [
-        "Led a team building a court-finder app concept from scratch — business model canvas, demo site, and mock marketing flyers.",
-        "Planned a go-to-market and social media ad strategy for the concept.",
-        "Delivered the final pitch to a panel of investors.",
       ],
     },
   ],
@@ -164,7 +164,7 @@ export const education = {
       logo: "/images/logo-sabis.png",
       location: "6th of October City, Egypt",
       degree: "High School Diploma",
-      dates: "Kindergarten – 12th Grade (Graduated)", // CONFIRM: no specific calendar years given yet — let me know if you want exact years shown instead
+      dates: "2013 – 2025",
       notes: "",
     },
   ],
