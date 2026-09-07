@@ -4,21 +4,21 @@
 export const profile = {
   name: "Ismail Mazhar",
   photo: "/images/profile-photo.jpg",
-  title: "Business & Technology Student — Marketing & Entrepreneurship", // TODO: confirm/rewrite
+  title: "Business & Technology Student — Marketing & Entrepreneurship",
   location: "Barcelona, Spain",
   citizenship: "French & Egyptian",
   availabilityBadge: "Open to internships, freelance & part-time work",
   heroTagline:
-    "TODO: one bold sentence describing what you do / the value you bring.",
+    "Turning ideas into audiences, brands, and products — from growing a course-selling YouTube community to shipping AI-assisted apps solo.",
   email: "ismail.mazhar2007@gmail.com",
   links: {
-    linkedin: "", // TODO: add LinkedIn URL
-    github: "", // TODO: add GitHub URL, or leave blank to hide
-    cvPdf: "", // TODO: add once the PDF CV is ready
+    linkedin: "https://www.linkedin.com/in/ismail-mazhar-494969262/",
+    github: "", // intentionally left blank — skip per request
+    cvPdf: "", // TODO: to be created — see PDF CV follow-up task
   },
   spokenLanguages: [
     { name: "Arabic", level: "Native" },
-    { name: "English", level: "TODO" }, // e.g. IELTS band / CEFR level
+    { name: "English", level: "C1 (IELTS)" },
     { name: "French", level: "Beginner–Intermediate" },
     { name: "Spanish", level: "Intermediate" },
   ],
@@ -51,7 +51,7 @@ export const experience = {
     {
       title: "Founder & Creator",
       company: "Self-Improvement YouTube Channel & Community",
-      dates: "TODO", // e.g. "2023 – 2024"
+      dates: "2023 – 2024",
       type: "Independent",
       bullets: [
         "Built a YouTube channel and Discord community helping young men work on self-improvement, reaching viewers across many countries.",
@@ -63,7 +63,7 @@ export const experience = {
     {
       title: "Sales Associate Intern",
       company: "Hamleys",
-      dates: "TODO",
+      dates: "2023",
       type: "Internship",
       bullets: [
         "Assisted customers on the shop floor and gave product recommendations.",
@@ -72,8 +72,8 @@ export const experience = {
     },
     {
       title: "Marketing & Sales Support",
-      company: "Family friend's cake business", // TODO: add business name if you'd like it named
-      dates: "TODO",
+      company: "Canela", // CONFIRM: read as "Canela" from "Canela cai 2026" — double check spelling/name
+      dates: "2026", // CONFIRM: this places it as the most recent role — check it shouldn't be reordered to the top
       type: "Freelance / informal",
       bullets: [
         "Supported social media marketing for the business.",
@@ -83,7 +83,7 @@ export const experience = {
     {
       title: "Team Lead, Entrepreneurship Program",
       company: "ESLSCA Business School (Egypt)",
-      dates: "TODO", // one-week program
+      dates: "December 2025", // one-week program
       type: "Program",
       bullets: [
         "Led a team building a court-finder app concept from scratch — business model canvas, demo site, and mock marketing flyers.",
@@ -102,7 +102,7 @@ export const projects = {
       role: "Creator",
       description:
         "A book discovery and tracking web app — search and browse any book by genre with live data, get recommendations, save books you want to buy, track what you've read, and view summaries and ratings.",
-      tags: ["AI-assisted build", "Google Books data"], // TODO: confirm actual tech stack
+      tags: ["AI-assisted build", "Google Books data"],
       link: "https://b-vault.netlify.app",
     },
     {
@@ -110,7 +110,7 @@ export const projects = {
       role: "Creator",
       description:
         "A Tinder-style travel destination app — swipe through destinations with prices, photos, summaries, ratings, best time to visit, and distance; filter by country or preference and save the ones you like.",
-      tags: ["AI-assisted build"], // TODO: confirm actual tech stack
+      tags: ["AI-assisted build"],
       link: "https://wanderswipe.netlify.app",
     },
   ],
@@ -137,7 +137,7 @@ export const skills = {
     "Miniconda / Anaconda",
     "Claude (AI-assisted development)",
   ],
-  certifications: [], // TODO: add any certifications
+  certifications: [], // CONFIRM: you said "expand" here — unclear if that means you have specific certifications to list, or want this section broadened some other way. Left empty for now.
 };
 
 export const education = {
@@ -148,7 +148,7 @@ export const education = {
       logo: "/images/logo-la-salle.jpg",
       location: "Barcelona, Spain",
       degree: "Management in Business and Technology (minor in Marketing)",
-      dates: "TODO – TODO (expected)", // currently 2nd year
+      dates: "2025 – 2029 (expected)",
       notes: "Currently in 2nd year.",
     },
     {
@@ -156,7 +156,7 @@ export const education = {
       logo: "/images/logo-eslsca.jpg",
       location: "Egypt",
       degree: "Entrepreneurship & Innovation Program",
-      dates: "TODO",
+      dates: "December 2025",
       notes: "One-week intensive program — built a business from scratch.",
     },
     {
@@ -164,7 +164,7 @@ export const education = {
       logo: "/images/logo-sabis.png",
       location: "6th of October City, Egypt",
       degree: "High School Diploma",
-      dates: "TODO",
+      dates: "Kindergarten – 12th Grade (Graduated)", // CONFIRM: no specific calendar years given yet — let me know if you want exact years shown instead
       notes: "",
     },
   ],
@@ -172,9 +172,14 @@ export const education = {
 
 export const lookingFor = {
   heading: "What I'm after.",
-  roles: ["TODO: e.g. Marketing, Business Development, Growth, Sales"],
-  industries: ["Open to any industry"], // TODO: confirm
-  locations: ["Barcelona / Spain", "EU", "Remote"], // TODO: confirm
+  roles: [
+    "Social Media Marketing",
+    "Branding",
+    "Marketing (general)",
+    "Open to other roles",
+  ],
+  industries: ["Marketing", "Management", "Technology", "HR", "Operations & Logistics"],
+  locations: ["Barcelona / Spain", "EU", "Remote"],
   arrangements: ["Remote", "Hybrid", "In-person"],
   types: ["Internship", "Part-time", "Freelance"],
   availability: "Immediately",
