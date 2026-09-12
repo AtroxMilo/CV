@@ -20,7 +20,7 @@ export const profile = {
     { name: "Arabic", level: "Native" },
     { name: "English", level: "C1 (IELTS)" },
     { name: "French", level: "Beginner–Intermediate" },
-    { name: "Spanish", level: "Intermediate" },
+    { name: "Spanish", level: "A2, learning B1" },
   ],
 };
 
@@ -113,6 +113,32 @@ export const projects = {
       tags: ["AI-assisted build"],
       link: "https://wanderswipe.netlify.app",
     },
+    {
+      name: "Absolute Command Centre",
+      role: "Co-builder (with my brother)",
+      description:
+        "An internal command centre built for my dad's property business — a private dashboard that manages prospects and pipeline stages, runs multi-step outreach sequences from reusable templates, and pulls every conversation into one shared inbox. Built alongside the company's public site.",
+      tags: ["Next.js", "Supabase", "Internal tool", "Team build"],
+      // Deliberately links the public company site, not the login-gated
+      // dashboard — the command centre itself is private/internal.
+      link: "https://www.absolutechoiceproperty.com/",
+    },
+    {
+      name: "Bee3 (بيع)",
+      role: "Co-builder (with my mum)",
+      description:
+        "A secondhand marketplace for Egypt — list apartments, furniture, electronics and goods for resale. Fully bilingual Arabic (RTL) and English, priced in EGP, with Egyptian governorates and cities as the location model and local payment methods sellers can choose to accept.",
+      tags: ["Next.js", "Bilingual / RTL", "Marketplace"],
+      link: "https://bee3-virid.vercel.app/en",
+    },
+    {
+      name: "Xpenses",
+      role: "Creator",
+      description:
+        "A local-first expense tracker — log and tag what you spend, then see week-over-week and month-over-month where the money goes, with budgets and savings goals. Installable to a phone home screen; all data stays in the browser. Personal MVP, still in progress.",
+      tags: ["React", "PWA", "MVP"],
+      link: "https://xpenses.ismail-mazhar2007.workers.dev/",
+    },
   ],
 };
 
@@ -138,6 +164,7 @@ export const skills = {
     "Claude (AI-assisted development)",
   ],
   certifications: [
+    "American High School Diploma — SABIS (GPA 3.67, High Honors)",
     "ESLSCA Entrepreneurship & Innovation Certificate",
     "Hamleys Internship Certificate",
     "Online Course — Igor Rupeita (Skool)", // CONFIRM: what was this course actually about/called? A real title (e.g. "Sales Mastery" or whatever it was) will read much better than "Online Course"
@@ -167,9 +194,9 @@ export const education = {
       school: "SABIS International School of Choueifat",
       logo: "/images/logo-sabis.png",
       location: "6th of October City, Egypt",
-      degree: "High School Diploma",
+      degree: "American High School Diploma",
       dates: "2013 – 2025",
-      notes: "",
+      notes: "Graduated with High Honors — GPA 3.67.",
     },
   ],
 };
@@ -180,6 +207,12 @@ export const lookingFor = {
     "Social Media Marketing",
     "Branding",
     "Marketing (general)",
+    "Sales",
+    "Operations",
+    "HR / People",
+    "IT support (Microsoft Office / MS 365)",
+    "Management & team lead",
+    "Cross-cultural & international roles",
     "Open to other roles",
   ],
   industries: ["Marketing", "Management", "Technology", "HR", "Operations & Logistics"],

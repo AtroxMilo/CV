@@ -6,7 +6,7 @@ export function About() {
   return (
     <section className="relative mx-auto max-w-6xl px-5 py-24 md:py-32">
       <Reveal>
-        <SectionHeading number="01" label="About" heading={about.heading} />
+        <SectionHeading number="1" label="About" heading={about.heading} />
       </Reveal>
 
       <div className="grid gap-10 md:grid-cols-3">

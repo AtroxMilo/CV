@@ -7,7 +7,7 @@ export function Contact() {
     <section className="relative mx-auto max-w-6xl px-5 py-24 md:py-32">
       <Reveal>
         <SectionHeading
-          number="07"
+          number="7"
           label="Contact"
           heading={contact.heading}
         />

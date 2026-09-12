@@ -2,13 +2,13 @@
 // and the prev/next links at the bottom of each page.
 
 export const pages = [
-  { href: "/about", number: "01", label: "About" },
-  { href: "/experience", number: "02", label: "Experience" },
-  { href: "/projects", number: "03", label: "Projects" },
-  { href: "/skills", number: "04", label: "Skills" },
-  { href: "/education", number: "05", label: "Education" },
-  { href: "/looking-for", number: "06", label: "Looking for" },
-  { href: "/contact", number: "07", label: "Contact" },
+  { href: "/about", number: "1", label: "About" },
+  { href: "/experience", number: "2", label: "Experience" },
+  { href: "/projects", number: "3", label: "Projects" },
+  { href: "/skills", number: "4", label: "Skills" },
+  { href: "/education", number: "5", label: "Education" },
+  { href: "/looking-for", number: "6", label: "Looking for" },
+  { href: "/contact", number: "7", label: "Contact" },
 ] as const;
 
 export function getPageNeighbors(href: string) {

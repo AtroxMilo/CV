@@ -7,7 +7,7 @@ export function Projects() {
     <section className="relative mx-auto max-w-6xl px-5 py-24 md:py-32">
       <Reveal>
         <SectionHeading
-          number="03"
+          number="3"
           label="Projects"
           heading={projects.heading}
         />

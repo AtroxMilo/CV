@@ -63,3 +63,134 @@ body {
     color: var(--color-muted);
   }
 }
+
+/* ---------------------------------------------------------------------------
+   View transitions
+   Page-to-page motion. Forward navigation slides content left, back slides it
+   right; the header stays anchored so only the content appears to move.
+   See node_modules/next/dist/docs/01-app/02-guides/view-transitions.md
+   --------------------------------------------------------------------------- */
+
+:root {
+  --vt-exit: 160ms;
+  --vt-enter: 240ms;
+  --vt-move: 420ms;
+  --vt-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* Keep the page clickable while a transition plays. */
+::view-transition {
+  pointer-events: none;
+}
+
+::view-transition-old(.nav-forward) {
+  --slide-offset: -48px;
+  animation:
+    var(--vt-exit) ease-in both vt-fade reverse,
+    var(--vt-move) var(--vt-ease) both vt-slide reverse;
+}
+::view-transition-new(.nav-forward) {
+  --slide-offset: 48px;
+  animation:
+    var(--vt-enter) ease-out var(--vt-exit) both vt-fade,
+    var(--vt-move) var(--vt-ease) both vt-slide;
+}
+
+::view-transition-old(.nav-back) {
+  --slide-offset: 48px;
+  animation:
+    var(--vt-exit) ease-in both vt-fade reverse,
+    var(--vt-move) var(--vt-ease) both vt-slide reverse;
+}
+::view-transition-new(.nav-back) {
+  --slide-offset: -48px;
+  animation:
+    var(--vt-enter) ease-out var(--vt-exit) both vt-fade,
+    var(--vt-move) var(--vt-ease) both vt-slide;
+}
+
+@keyframes vt-slide {
+  from {
+    translate: var(--slide-offset);
+  }
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes vt-fade {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* The header is the fixed spatial anchor — it must not slide with the page. */
+::view-transition-group(site-header) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(site-header) {
+  display: none;
+}
+::view-transition-new(site-header) {
+  animation: none;
+}
+
+/* ---------------------------------------------------------------------------
+   In-page reveal
+   Text and details settle in after the page arrives. Driven by CSS so it
+   composites on the GPU and never blocks the view transition above.
+   --------------------------------------------------------------------------- */
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.rise {
+  animation: rise-in 620ms var(--vt-ease) both;
+  animation-delay: var(--rise-delay, 0ms);
+}
+
+/* Elements revealed on scroll start hidden, then animate when observed. */
+.rise-on-scroll {
+  opacity: 0;
+}
+
+.rise-on-scroll.is-visible {
+  animation: rise-in 620ms var(--vt-ease) both;
+  animation-delay: var(--rise-delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+
+  .rise,
+  .rise-on-scroll,
+  .rise-on-scroll.is-visible {
+    animation: none !important;
+    opacity: 1;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

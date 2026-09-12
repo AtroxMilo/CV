@@ -12,6 +12,7 @@ export function PageNav({ current }: { current: string }) {
         {prev ? (
           <Link
             href={prev.href}
+            transitionTypes={["nav-back"]}
             className="group flex flex-col text-sm text-muted transition-colors hover:text-fg"
           >
             <span className="font-mono text-xs">← {prev.number}</span>
@@ -25,6 +26,7 @@ export function PageNav({ current }: { current: string }) {
         {next ? (
           <Link
             href={next.href}
+            transitionTypes={["nav-forward"]}
             className="group flex flex-col items-end text-right text-sm text-muted transition-colors hover:text-fg"
           >
             <span className="font-mono text-xs">{next.number} →</span>

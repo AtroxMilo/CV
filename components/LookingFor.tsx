@@ -12,26 +12,32 @@ function Row({ label, items }: { label: string; items: string[] }) {
 }
 
 export function LookingFor() {
+  const rows = [
+    { label: "Roles", items: lookingFor.roles },
+    { label: "Industries", items: lookingFor.industries },
+    { label: "Locations", items: lookingFor.locations },
+    { label: "Arrangement", items: lookingFor.arrangements },
+    { label: "Type", items: lookingFor.types },
+    { label: "Availability", items: [lookingFor.availability] },
+  ];
+
   return (
     <section className="relative mx-auto max-w-6xl px-5 py-24 md:py-32">
       <Reveal>
         <SectionHeading
-          number="06"
+          number="6"
           label="Looking for"
           heading={lookingFor.heading}
         />
       </Reveal>
 
-      <Reveal delay={0.05}>
-        <div>
-          <Row label="Roles" items={lookingFor.roles} />
-          <Row label="Industries" items={lookingFor.industries} />
-          <Row label="Locations" items={lookingFor.locations} />
-          <Row label="Arrangement" items={lookingFor.arrangements} />
-          <Row label="Type" items={lookingFor.types} />
-          <Row label="Availability" items={[lookingFor.availability]} />
-        </div>
-      </Reveal>
+      <div>
+        {rows.map((row, i) => (
+          <Reveal key={row.label} delay={Math.min(0.05 + i * 0.05, 0.3)}>
+            <Row label={row.label} items={row.items} />
+          </Reveal>
+        ))}
+      </div>
     </section>
   );
 }
