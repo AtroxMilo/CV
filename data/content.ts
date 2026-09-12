@@ -117,7 +117,7 @@ export const projects = {
       name: "Absolute Command Centre",
       role: "Co-builder (with my brother)",
       description:
-        "An internal command centre built for my dad's property business — a private dashboard that manages prospects and pipeline stages, runs multi-step outreach sequences from reusable templates, and pulls every conversation into one shared inbox. Built alongside the company's public site.",
+        "An internal command centre built for my dad's property business — a private, login-protected dashboard that keeps client and prospect records in one place, tracks them through pipeline stages, and gives the team a single view of what's active. Built alongside the company's public site.",
       tags: ["Next.js", "Supabase", "Internal tool", "Team build"],
       // Deliberately links the public company site, not the login-gated
       // dashboard — the command centre itself is private/internal.
