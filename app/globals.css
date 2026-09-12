@@ -175,6 +175,25 @@ body {
   animation-delay: var(--rise-delay, 0ms);
 }
 
+/* Side content slides in from the right instead of rising from below. */
+@keyframes glide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(28px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+.rise-on-scroll.rise-from-right.is-visible {
+  animation: glide-in-right 640ms var(--vt-ease) both;
+  animation-delay: var(--rise-delay, 0ms);
+}
+
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-old(*),
   ::view-transition-new(*),
@@ -185,7 +204,8 @@ body {
 
   .rise,
   .rise-on-scroll,
-  .rise-on-scroll.is-visible {
+  .rise-on-scroll.is-visible,
+  .rise-on-scroll.rise-from-right.is-visible {
     animation: none !important;
     opacity: 1;
   }

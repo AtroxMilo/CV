@@ -15,11 +15,14 @@ export function Reveal({
   children,
   className,
   delay = 0,
+  from = "bottom",
 }: {
   children: ReactNode;
   className?: string;
   /** Stagger offset in seconds, matching the previous framer-motion API. */
   delay?: number;
+  /** Which direction the content travels in from. */
+  from?: "bottom" | "right";
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -59,7 +62,7 @@ export function Reveal({
     <div
       ref={ref}
       className={[
-        "rise-on-scroll",
+        from === "right" ? "rise-on-scroll rise-from-right" : "rise-on-scroll",
         visible ? "is-visible" : "",
         className ?? "",
       ]

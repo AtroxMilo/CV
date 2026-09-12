@@ -99,6 +99,7 @@ export const projects = {
   items: [
     {
       name: "BookVault",
+      logo: "/images/projects/bookvault.svg",
       role: "Creator",
       description:
         "A book discovery and tracking web app — search and browse any book by genre with live data, get recommendations, save books you want to buy, track what you've read, and view summaries and ratings.",
@@ -107,6 +108,7 @@ export const projects = {
     },
     {
       name: "WanderSwipe",
+      logo: "",
       role: "Creator",
       description:
         "A Tinder-style travel destination app — swipe through destinations with prices, photos, summaries, ratings, best time to visit, and distance; filter by country or preference and save the ones you like.",
@@ -115,6 +117,7 @@ export const projects = {
     },
     {
       name: "Absolute Command Centre",
+      logo: "/images/projects/absolute.png",
       role: "Co-builder (with my brother)",
       description:
         "An internal command centre built for my dad's property business — a private, login-protected dashboard that keeps client and prospect records in one place, tracks them through pipeline stages, and gives the team a single view of what's active. Built alongside the company's public site.",
@@ -125,6 +128,7 @@ export const projects = {
     },
     {
       name: "Bee3 (بيع)",
+      logo: "/images/projects/bee3.svg",
       role: "Co-builder (with my mum)",
       description:
         "A secondhand marketplace for Egypt — list apartments, furniture, electronics and goods for resale. Fully bilingual Arabic (RTL) and English, priced in EGP, with Egyptian governorates and cities as the location model and local payment methods sellers can choose to accept.",
@@ -133,6 +137,7 @@ export const projects = {
     },
     {
       name: "Xpenses",
+      logo: "/images/projects/xpenses.svg",
       role: "Creator",
       description:
         "A local-first expense tracker — log and tag what you spend, then see week-over-week and month-over-month where the money goes, with budgets and savings goals. Installable to a phone home screen; all data stays in the browser. Personal MVP, still in progress.",
@@ -210,7 +215,7 @@ export const lookingFor = {
     "Sales",
     "Operations",
     "HR / People",
-    "IT support (Microsoft Office / MS 365)",
+    "IT for business (Microsoft Office / MS 365)",
     "Management & team lead",
     "Cross-cultural & international roles",
     "Open to other roles",

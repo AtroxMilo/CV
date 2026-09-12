@@ -18,8 +18,8 @@ export function About() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.1} className="space-y-8">
-          <div>
+        <div className="space-y-8">
+          <Reveal from="right" delay={0.1}>
             <h3 className="mb-3 text-sm font-medium uppercase tracking-wide text-muted">
               Leadership
             </h3>
@@ -31,9 +31,9 @@ export function About() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Reveal>
 
-          <div>
+          <Reveal from="right" delay={0.2}>
             <h3 className="mb-3 text-sm font-medium uppercase tracking-wide text-muted">
               Outside of work
             </h3>
@@ -44,8 +44,8 @@ export function About() {
                 </span>
               ))}
             </div>
-          </div>
-        </Reveal>
+          </Reveal>
+        </div>
       </div>
     </section>
   );
