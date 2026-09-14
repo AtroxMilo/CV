@@ -55,7 +55,11 @@ export function Projects() {
           );
 
           return (
-            <Reveal key={project.name} delay={Math.min(i * 0.05, 0.2)}>
+            <Reveal
+              key={project.name}
+              trigger="mount"
+              delay={0.15 + i * 0.18}
+            >
               {project.link ? (
                 <a
                   href={project.link}
