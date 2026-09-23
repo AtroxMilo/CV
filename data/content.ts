@@ -172,7 +172,7 @@ export const skills = {
     "American High School Diploma — SABIS (GPA 3.67, High Honors)",
     "ESLSCA Entrepreneurship & Innovation Certificate",
     "Hamleys Internship Certificate",
-    "Online Course — Igor Rupeita (Skool)", // CONFIRM: what was this course actually about/called? A real title (e.g. "Sales Mastery" or whatever it was) will read much better than "Online Course"
+    "Creator Community — Igor Rupeita (Skool)",
   ],
 };
 
@@ -202,6 +202,12 @@ export const education = {
       degree: "American High School Diploma",
       dates: "2013 – 2025",
       notes: "Graduated with High Honors — GPA 3.67.",
+    },
+    {
+      school: "Igor Rupeita — Creator Community",
+      location: "Online (Skool)",
+      degree: "Online Course",
+      dates: "2024",
     },
   ],
 };
