@@ -29,7 +29,7 @@ export const about = {
   paragraphs: [
     "Second-year Management in Business and Technology student at La Salle – Universitat Ramon Llull in Barcelona, minoring in Marketing.",
     "Grew up in Giza, Egypt, and studied at SABIS International School of Choueifat (6th of October City) before moving to Barcelona for university.",
-    "Believes people can meaningfully improve their lives by being deliberate with their time and goals — a philosophy that led to building a self-improvement YouTube channel and Discord community reaching young men across many countries.",
+    "I believe people can meaningfully improve their lives by being deliberate with their time and goals — a philosophy that led to building a self-improvement YouTube channel and Discord community reaching young men across many countries.",
   ],
   leadership: [
     "Took on project/group manager roles in university coursework — assigning tasks, coordinating teammates, and delivering alongside them.",
